@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Copy .env
-      run: php -r "file_exists('code/sample_tdd/.env') || copy('code/sample_tdd/.env.example', 'code/sample_tdd/.env');"
+      run: php -r "file_exists('laravel_tdd/code/sample_tdd/.env') || copy('laravel_tdd/code/sample_tdd/.env.example', 'code/sample_tdd/.env');"
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Generate key
@@ -29,4 +29,4 @@ jobs:
     #   env:
     #     DB_CONNECTION: sqlite
     #     DB_DATABASE: database/database.sqlite
-      run: code/sample_tdd/vendor/phpunit
+      run: laravel_tdd/code/sample_tdd/vendor/phpunit
