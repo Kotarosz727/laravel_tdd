@@ -25,3 +25,5 @@ Route::put('customers/{customer_id}', function() {});
 Route::delete('customers/{customer_id}', function() {});
 Route::get('reports', function() {});
 Route::post('reports', function() {});
+Route::get('reports/1', function() {});
+Route::post('reports/1', function() {});
