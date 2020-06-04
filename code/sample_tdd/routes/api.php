@@ -27,3 +27,5 @@ Route::get('reports', function() {});
 Route::post('reports', function() {});
 Route::get('reports/1', function() {});
 Route::post('reports/1', function() {});
+Route::put('reports/1', function() {});
+Route::delete('reports/1', function() {});
