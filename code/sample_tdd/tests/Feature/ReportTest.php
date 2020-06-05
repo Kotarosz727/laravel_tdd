@@ -8,6 +8,13 @@ use Tests\TestCase;
 
 class ReportTest extends TestCase
 {
+    use RefreshDatabase;
+
+    public function setUp()
+    {
+        parent::setUp();
+        $this->artisan('db:seed', ['--class' => 'TestDataSeeder']);
+    }
     /**
      * @test
      */
