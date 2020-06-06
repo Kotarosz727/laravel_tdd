@@ -93,15 +93,6 @@ class ReportTest extends TestCase
     /**
      * @test
      */
-    public function post_response_code_200_reports_id()
-    {
-        $response = $this->post('api/reports/1');
-        $response->assertStatus(200);
-    }
-
-    /**
-     * @test
-     */
     public function put_response_code_200_reports_id()
     {
         $response = $this->put('api/reports/1');
